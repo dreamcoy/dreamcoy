@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Coming soon</title>
+        <link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+
+        <style>
+            body, div, h1
+            {
+                font-family: 'Cuprum', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            div#welcome
+            {
+                color: #FFFFFF;
+                background: #000 url('http://farm3.staticflickr.com/2682/4170676024_d09e67b39e.jpg');
+                height: 100%;
+                position: relative;
+            }
+            h1#title
+            {
+                font-size: 1.750em;
+                font-size: 3.50vw;
+                position: absolute;
+                bottom: 10%;
+                left: 3%;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="welcome">
+            <h1 id="title">Coy's still dreaming of a better site!</h1>
+            <h2><?= $this->text; ?></h2>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            causeRepaintsOn = $("h1, h2, h3, p");
+
+            $(window).resize(function() {
+                causeRepaintsOn.css("z-index", 1);
+            });
+        </script>
+    </body>
+
+
+</html>
